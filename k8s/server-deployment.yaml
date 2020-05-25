@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: seerver
-          image: stephengrider/multi-server
+          image: lalkovic/multi-server
           ports:
           - containerPort: 5000
           env:
