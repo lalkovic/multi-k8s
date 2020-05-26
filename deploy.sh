@@ -10,7 +10,7 @@ docker push lalkovic/multi-client:$SHA
 docker push lalkovic/multi-server:$SHA
 docker push lalkovic/multi-worker:$SHA
 
-kubectl apply -f k8s
+kubectl apply -f k8s 
 
 kubectl set image deployments/server-deployment server=lalkovic/multi-server:$SHA
 kubectl set image deployments/client-deployment server=lalkovic/multi-client:$SHA
